@@ -1,4 +1,4 @@
-# [Personal website](https://nair0lf32.github.io)
+# [Personal website](https://nair0lf32.github.io/website)
 
 
 My personal website (very basic and simple one) Made with a free bootstrap template for css and a bit of jquery plus vanilla javascript (I wanted it simple, good-looking and quick to make). Its a basic cool personal space and I am gonna add more pages to it later.

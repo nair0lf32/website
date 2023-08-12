@@ -17,19 +17,16 @@ html,
 body {
     overflow: hidden;
 }
-/*W3Bits images basic hover zoom*/
-/* Show the overflowing of child elements */
-/* [2] Transition property for smooth transformation of images */
+
 .img-hover-zoom {
     overflow: visible;
     transition: transform 0.5s ease;
 }
-/* [3] Finally, transforming the image when container gets hovered */
+
 .img-hover-zoom:hover {
     transform: scale(1.2);
 }
-/* W3Bits images colorize hover zoom*/
-/* Colorize-photo */
+
 .photo {
     transition: transform 0.5s, filter 1.2s ease-in-out;
     filter: grayscale(100%);
@@ -38,7 +35,7 @@ body {
 .photo-container {
     overflow: hidden;
 }
-/* The Transformation */
+
 .photo-colorize {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);

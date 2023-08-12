@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', event => {
-    // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
         if (!navbarCollapsible) {
@@ -11,11 +10,10 @@ window.addEventListener('DOMContentLoaded', event => {
             navbarCollapsible.classList.add('navbar-shrink')
         }
     };
-    // Shrink the navbar by default
+
+    //shrink navbar by default and then when scrolled
     navbarShrink();
-    // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
-    // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
         new bootstrap.ScrollSpy(document.body, {

@@ -52,17 +52,17 @@ jQuery(window).on('load', function () {
     })(jQuery);
 });
 
-//Animate photo on scroll
-var images = document.getElementsByClassName('photo');
-var offset = window.screen.height - 70.4; // offset to trigger the colorize effect
-window.addEventListener('scroll', function () {
-    if (window.scrollY >= offset || window.scrollY <= -offset) {
-        [].forEach.call(images, function (image) {
-            image.classList.add('photo-colorize');
-        });
-    } else {
-        [].forEach.call(images, function (image) {
-            image.classList.remove('photo-colorize');
-        });
-    }
+
+// Portflio photo animation using IntersectionObserver API
+let target = document.querySelector('.photo');
+let observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('photo-colorize');
+        } else {
+            entry.target.classList.remove('photo-colorize');
+        }
+    });
 });
+observer.observe(target);
+

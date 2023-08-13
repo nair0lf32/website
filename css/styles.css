@@ -161,13 +161,17 @@ button:not(:disabled) {
   font-weight: 300;
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+b {
+  font-weight: 900;
 }
 
+
+//Gentlemen, how to perfectly center an image
 .photo {
-margin-left: 5%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+width: 50%;
 }
 
 .container {
@@ -390,7 +394,8 @@ margin-left: 5%;
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 3rem;
+  font-weight: 700;
   line-height: 1;
   background-color: transparent;
   border: 0.125rem solid transparent;
@@ -406,12 +411,9 @@ margin-left: 5%;
 
 .navbar-toggler:hover {
   text-decoration: none;
-}
-
-.navbar-toggler:focus {
-  text-decoration: none;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem;
+  box-shadow: 0 0 0 0.15rem ;
+  transition: box-shadow 0.15s ease-out;
 }
 
 @media (min-width: 992px) {

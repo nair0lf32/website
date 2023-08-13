@@ -53,12 +53,14 @@ jQuery(window).on('load', function () {
 });
 
 
-// Portflio photo animation using IntersectionObserver API
+// Portfolio photo animation using IntersectionObserver API
 let target = document.querySelector('.photo');
 let observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('photo-colorize');
+            setTimeout(() => {
+                entry.target.classList.add('photo-colorize');
+            }, 1000); //Little delay for smoothness
         } else {
             entry.target.classList.remove('photo-colorize');
         }

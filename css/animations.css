@@ -1,48 +1,47 @@
 /* prelaoder*/
 .loader {
-    align-items: center;
-    background: #4615ce;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    left: 0;
-    position: fixed;
-    top: 0;
-    transition: opacity 0.3s linear;
-    width: 100%;
-    z-index: 9999;
+  align-items: center;
+  background: #4615ce;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.3s linear;
+  width: 100%;
+  z-index: 9999;
 }
 html,
 body {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .img-hover-zoom {
-    overflow: visible;
-    transition: transform 0.5s ease;
+  overflow: visible;
+  transition: transform 0.5s ease;
 }
 
 .img-hover-zoom:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .photo {
-    transition: transform 2.5s, filter 6s ease-in-out;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+  transition: transform 2s, filter 3s ease-in-out;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 .photo-container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .photo-colorize {
-    transition: transform 2.5s, filter 6s ease-in-out;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    transform: scale(1.1);
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  transform: scale(1.1);
 }
 h1:hover,
 h2:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
